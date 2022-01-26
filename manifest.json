@@ -12,6 +12,13 @@
       "128": "icons/anon-128.png"
     },
   
+    "page_action":{
+      "show_matches": ["*://*/moodle/user/index.php*"],
+      "default_icon": "icons/man-32.png",
+      "default_title": "Toggle Roster View (Off)",
+      "browser_style" : true
+    },
+
     "content_scripts": [
       {
         "matches": ["*://*/moodle/user/index.php*"],
@@ -26,7 +33,6 @@
 
 
     "permissions" : [
-      "<any_urls>",
         "activeTab",
         "tabs",
         "menus"
