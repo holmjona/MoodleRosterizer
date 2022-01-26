@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Moodle Rosterizer",
+    "version": "0.0",  
+    "description": "Converts the participants page to a Roster without the need to install a Moodle Plugin",
+  
+    "icons": {
+      "16": "icons/anon-16.png",
+      "32": "icons/anon-32.png",
+      "48": "icons/anon-48.png",
+      "64": "icons/anon-64.png",
+      "128": "icons/anon-128.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/moodle/user/index.php*"],
+        "js": ["rosterizer.js"]
+      }
+    ],
+    
+    "background":{
+      "scripts":["background.js"]
+
+    },
+
+
+    "permissions" : [
+      "<any_urls>",
+        "activeTab",
+        "tabs",
+        "menus"
+    ]
+  
+  }

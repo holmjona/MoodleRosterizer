@@ -1,0 +1,21 @@
+#participants tr, #participants td{
+    display: block;
+  }
+  #participants tr{
+    display: inline-block;
+    width: 20%;
+    text-align:center;
+  }
+  #participants .c3, #participants .c4, #participants .c5, #participants .c6{ display: none;}
+  #participants .cell.c1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+  }
+  #participants .c1 img {
+      height: 80px;
+      width: 80px;
+      display: block;
+      margin: auto;
+  }
+  .filter-group{display: none;}
